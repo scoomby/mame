@@ -469,7 +469,7 @@ Some are based on the C64 Tape Archive at https://archive.org/download/c64tapes/
 		</part>
 	</software>
 
-	<software name="aceofaces" supported="no"> <!-- tape loads but doesn't run (remains stuck showing flashing colour lines) -->>
+	<software name="aceofaces" supported="no"> <!-- tape loads but doesn't run (remains stuck showing flashing colour lines) -->
 		<description>Ace of Aces</description>
 		<year>1986</year>
 		<publisher>U.S. Gold</publisher>
@@ -967,7 +967,7 @@ Some are based on the C64 Tape Archive at https://archive.org/download/c64tapes/
 		</part>
 	</software>
 
-	<software name="apba" cloneof="apb" supported="no"> <!-- tape loads but doesn't run (remains stuck showing black screen) -->>
+	<software name="apba" cloneof="apb" supported="no"> <!-- tape loads but doesn't run (remains stuck showing black screen) -->
 		<description>APB (alt)</description>
 		<year>1989</year>
 		<publisher>Domark</publisher>
@@ -987,7 +987,7 @@ Some are based on the C64 Tape Archive at https://archive.org/download/c64tapes/
 		</part>
 	</software>
 
-	<software name="aquanaut" supported="no"> <!-- tape loads but doesn't run (remains stuck showing light blue screen) -->>
+	<software name="aquanaut" supported="no"> <!-- tape loads but doesn't run (remains stuck showing light blue screen) -->
 		<description>Aquanaut</description>
 		<year>1984</year>
 		<publisher>Interceptor Software</publisher>
@@ -1199,7 +1199,7 @@ Some are based on the C64 Tape Archive at https://archive.org/download/c64tapes/
 		</part>
 	</software>
 
-	<software name="asterixa" supported="no"> <!-- tape loads but doesn't run (remains stuck showing light blue screen) -->>
+	<software name="asterixa" supported="no"> <!-- tape loads but doesn't run (remains stuck showing light blue screen) -->
 		<description>Asterix and the Magic Cauldron</description>
 		<year>1988</year>
 		<publisher>Melbourne House</publisher>
