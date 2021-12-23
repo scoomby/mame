@@ -440,7 +440,7 @@ void cyclemb_state::skydest_bankswitch_w(uint8_t data)
 {
 	membank("bank1")->set_entry(data & 0x03);
 	m_sprite_page = (data & 0x04) >> 2;
-	flip_screen_set((data & 0x40) == 0);
+	flip_screen_set((data & 0x40) == 0x40);
 }
 
 void cyclemb_state::cyclemb_screen_display_w(uint8_t data)
