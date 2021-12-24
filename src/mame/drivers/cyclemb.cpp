@@ -472,7 +472,7 @@ void cyclemb_state::sound_cmd_w(uint8_t data) //actually ciom
 
 void cyclemb_state::cyclemb_flip_w(uint8_t data)
 {
-	flip_screen_set(data & 1);
+	flip_screen_set((data & 1) == 0);
 
 	// a bunch of other things are set here
 }
