@@ -440,7 +440,7 @@ void cyclemb_state::skydest_bankswitch_w(uint8_t data)
 {
 	membank("bank1")->set_entry(data & 0x03);
 	m_sprite_page = (data & 0x04) >> 2;
-	flip_screen_set((data & 0x40) == 0x40);
+	flip_screen_set((data & 0x40) == 0);
 }
 
 void cyclemb_state::cyclemb_screen_display_w(uint8_t data)
@@ -472,7 +472,7 @@ void cyclemb_state::sound_cmd_w(uint8_t data) //actually ciom
 
 void cyclemb_state::cyclemb_flip_w(uint8_t data)
 {
-	flip_screen_set((data & 1) == 0);
+	flip_screen_set(data & 1);
 
 	// a bunch of other things are set here
 }
@@ -915,9 +915,9 @@ static INPUT_PORTS_START( skydest )
 	PORT_DIPSETTING(    0x04, DEF_STR( 4C_1C ) )
 	PORT_DIPSETTING(    0x08, DEF_STR( 3C_1C ) )
 	PORT_DIPSETTING(    0x0c, DEF_STR( 2C_1C ) )
-	PORT_DIPNAME( 0x10, 0x10, DEF_STR( Cabinet ) )
-	PORT_DIPSETTING(    0x10, DEF_STR( Cocktail ) )
+	PORT_DIPNAME( 0x10, 0x00, DEF_STR( Cabinet ) )
 	PORT_DIPSETTING(    0x00, DEF_STR( Upright ) )
+	PORT_DIPSETTING(    0x10, DEF_STR( Cocktail ) )
 	PORT_BIT( 0xe0, IP_ACTIVE_HIGH, IPT_UNUSED )
 
 	PORT_START("DSW3")
@@ -930,9 +930,9 @@ static INPUT_PORTS_START( skydest )
 	PORT_DIPNAME( 0x04, 0x00, DEF_STR( Unknown ) )
 	PORT_DIPSETTING(    0x00, DEF_STR( Off ) )
 	PORT_DIPSETTING(    0x04, DEF_STR( On ) )
-	PORT_DIPNAME( 0x08, 0x08, DEF_STR( Flip_Screen ) )
-	PORT_DIPSETTING(    0x08, DEF_STR( Off ) )
-	PORT_DIPSETTING(    0x00, DEF_STR( On ) )
+	PORT_DIPNAME( 0x08, 0x00, DEF_STR( Flip_Screen ) )
+	PORT_DIPSETTING(    0x00, DEF_STR( Off ) )
+	PORT_DIPSETTING(    0x08, DEF_STR( On ) )
 	PORT_DIPNAME( 0x10, 0x00, DEF_STR( Unknown ) )
 	PORT_DIPSETTING(    0x00, DEF_STR( Off ) )
 	PORT_DIPSETTING(    0x10, DEF_STR( On ) )
