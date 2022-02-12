@@ -632,7 +632,7 @@ INPUT_PORTS_END
 
 static INPUT_PORTS_START( striv )
 	PORT_START("DSW1")
-	PORT_DIPNAME( 0x02, 0x00, "Monitor" )               PORT_DIPLOCATION("SW1:!2")
+	PORT_DIPNAME( 0x02, 0x00, "Screen" )                PORT_DIPLOCATION("SW1:!2")
 	PORT_DIPSETTING(    0x02, "Horizontal" )
 	PORT_DIPSETTING(    0x00, "Vertical" )
 	PORT_DIPNAME( 0x05, 0x05, "Gaming Option Number" )  PORT_DIPLOCATION("SW1:!1,!3")
