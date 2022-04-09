@@ -525,11 +525,11 @@ void r2dtank_state::r2dtank(machine_config &config)
 
 	AY8910(config, m_ay1, 3.579545_MHz_XTAL / 4); // probably E clock from MC6802
 	m_ay1->port_a_read_callback().set_ioport("DSWB");
-	m_ay1->port_b_read_callback().set_ioport("DSWC");
+	//m_ay1->port_b_read_callback().set_ioport("DSWC");
 	m_ay1->add_route(ALL_OUTPUTS, "mono", 0.25);
 
 	AY8910(config, m_ay2, 3.579545_MHz_XTAL / 4);
-	m_ay2->port_a_read_callback().set_ioport("IN1");
+	m_ay2->port_a_read_callback().set_ioport("DSWC");
 	m_ay2->port_b_read_callback().set_ioport("DSWA");
 	m_ay2->add_route(ALL_OUTPUTS, "mono", 0.25);
 }
