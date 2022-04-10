@@ -433,7 +433,7 @@ static INPUT_PORTS_START( r2dtank )
 	PORT_DIPSETTING(    0x80, DEF_STR( On ) )
 
 	PORT_START("DSWC")
-	PORT_DIPNAME( 0x01, 0x01, DEF_STR( "Number of Shots" ) )
+	PORT_DIPNAME( 0x01, 0x01, "Number of Shots" )
 	PORT_DIPSETTING(    0x00, "4" )
 	PORT_DIPSETTING(    0x01, "1" )
 	PORT_DIPNAME( 0x02, 0x00, DEF_STR( Unknown ) )
